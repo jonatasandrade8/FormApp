@@ -7,22 +7,22 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    /* Removido: position: relative; */
-    /* Removido: padding: 40px; */
+    padding: 20px; /* Padding geral para o corpo, como na imagem */
     font-family: 'Poppins', sans-serif;
-    background-color: #6A5ACD; /* Roxo principal, como o fundo da sua página */
-    color: #e0e0e0;
+    background-color: #E6E6FA; /* Roxo claro / lavanda, como o fundo da página */
+    color: #4B0082; /* Roxo escuro para o texto padrão */
 }
 
 .container {
-    text-align: center;
     max-width: 600px;
     width: 100%;
-    background: #7B68EE;
-    padding: 30px;
+    background: #FFFFFF; /* Fundo branco para o container, como os blocos da imagem */
+    padding: 30px 40px; /* Padding ajustado para o padrão de blocos */
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
     box-sizing: border-box;
+    margin-top: 20px; /* Margem superior para separar de um possível cabeçalho */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
 fieldset {
@@ -38,14 +38,14 @@ legend {
 h2 {
     text-align: center;
     margin-bottom: 25px;
-    color: #00FF7F; /* Título em verde */
+    color: #4B0082; /* Título em roxo escuro */
     font-weight: 600;
 }
 
 h3 {
     text-align: center;
     margin-top: 30px;
-    color: #00FF7F; /* Subtítulo em verde */
+    color: #4B0082; /* Subtítulo em roxo escuro */
 }
 
 label {
@@ -53,28 +53,28 @@ label {
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 8px;
-    color: #f0f0f0;
+    color: #4B0082; /* Labels em roxo escuro */
 }
 
 select, input[type="number"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #00FF7F; /* Borda de verde para os inputs */
-    background-color: #8A2BE2;
-    color: #fff;
+    border: 1px solid #DDA0DD; /* Borda em lilás suave */
+    background-color: #F8F8FF; /* Fundo do input em branco off-white */
+    color: #4B0082;
     border-radius: 8px;
     outline: none;
     transition: border-color 0.3s;
 }
 
 select:focus, input[type="number"]:focus {
-    border-color: #fff; /* Borda branca ao focar para um bom contraste */
+    border-color: #4B0082; /* Borda de foco em roxo escuro */
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-color: #00FF7F; /* Linha horizontal em verde */
+    background-color: #DDA0DD; /* Linha horizontal em lilás suave */
     margin: 25px 0;
 }
 
@@ -92,23 +92,23 @@ button {
 }
 
 #adicionar {
-    background-color: #00FF7F; /* Fundo verde para o botão principal */
-    color: #000;
+    background-color: #8A2BE2; /* Fundo do botão principal em roxo mais vibrante */
+    color: #fff;
 }
 
 #adicionar:hover {
-    background-color: #00e673;
+    background-color: #6A1FB8;
     transform: translateY(-2px);
 }
 
 #enviar {
     background-color: transparent;
-    border: 2px solid #00FF7F; /* Borda verde para o botão secundário */
-    color: #00FF7F;
+    border: 2px solid #8A2BE2; /* Borda do botão secundário em roxo vibrante */
+    color: #8A2BE2;
 }
 
 #enviar:hover {
-    background-color: #00FF7F;
+    background-color: #8A2BE2;
     color: #fff;
     transform: translateY(-2px);
 }
@@ -120,11 +120,11 @@ ul {
 }
 
 ul li {
-    background: #8A2BE2;
+    background: #F8F8FF; /* Fundo dos itens da lista em branco off-white */
     margin-bottom: 10px;
     padding: 12px 15px;
     border-radius: 8px;
-    color: #fff;
+    color: #4B0082;
     display: flex;
     justify-content: space-between;
     align-items: center;
