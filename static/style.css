@@ -1,0 +1,131 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    /* Removido: position: relative; */
+    /* Removido: padding: 40px; */
+    font-family: 'Poppins', sans-serif;
+    background-color: #6A5ACD; /* Roxo principal, como o fundo da sua página */
+    color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background: #7B68EE;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00FF7F; /* Título em verde */
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    color: #00FF7F; /* Subtítulo em verde */
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #f0f0f0;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00FF7F; /* Borda de verde para os inputs */
+    background-color: #8A2BE2;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus, input[type="number"]:focus {
+    border-color: #fff; /* Borda branca ao focar para um bom contraste */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #00FF7F; /* Linha horizontal em verde */
+    margin: 25px 0;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.1s;
+    text-transform: uppercase;
+}
+
+#adicionar {
+    background-color: #00FF7F; /* Fundo verde para o botão principal */
+    color: #000;
+}
+
+#adicionar:hover {
+    background-color: #00e673;
+    transform: translateY(-2px);
+}
+
+#enviar {
+    background-color: transparent;
+    border: 2px solid #00FF7F; /* Borda verde para o botão secundário */
+    color: #00FF7F;
+}
+
+#enviar:hover {
+    background-color: #00FF7F;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    background: #8A2BE2;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

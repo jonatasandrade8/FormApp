@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Estoque</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                <h2>Formulário de Estoque</h2>
+            </legend>
+            <label>Estado:</label>
+            <select id="estado"></select>
+            <label>Rede:</label>
+            <select id="rede"></select>
+            <label>Usuário:</label>
+            <select id="usuario"></select>
+            <label>Loja:</label>
+            <select id="loja"></select>
+            <hr>
+            <label>Produto:</label>
+            <select id="produto">
+                <option>Tipo do produto</option>
+                <option value="Pacovan">Pacovan</option>
+                <option value="Prata">Prata</option>
+                <option value="Nanica">Nanica</option>
+                <option value="Comprida">Comprida</option>
+                <option value="Maçã">Maçã</option>
+                <option value="Goiaba">Goiaba</option>
+            </select>
+            <label>Tipo de Caixa:</label>
+            <select id="caixa">
+                <option value="Pequena">Pequena</option>
+                <option value="Grande">Grande</option>
+                <option value="ifco">Ifco</option>
+            </select>
+            <label>Quantidade:</label>
+            <input type="number" id="quantidade" min="1">
+            <button id="adicionar">Adicionar à Lista</button>
+            <button id="enviar">Enviar Estoque</button>
+        </fieldset>
+        <h3>Lista de Estoque:</h3>
+        <ul id="lista"></ul>
+    </div>
+</body>
+</html>
